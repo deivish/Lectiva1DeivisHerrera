@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 
 export const UseApi = (url) => {
-  
-    const [data, setData ] = useState(null);
-    const [loading, setLoading ] = useState(false);
+
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const fetchApi = () => {
         fetch(url)
@@ -14,9 +14,9 @@ export const UseApi = (url) => {
                 // console.log(respuestaJson);
             })
             .catch(error => console.log(error))
-    }
+    };
     useEffect(() => {
         fetchApi();
-    })
-    return{ loading, data}
+    }, [url]);
+    return { loading, data }
 }
