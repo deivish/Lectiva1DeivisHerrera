@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import { AddCategory } from './Components/AddCategory';
+import { DisplayGifs } from './Components/DisplayGifs';
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
       <h2>Main component</h2>
 
       <AddCategory setCategory={setCategory}/>
+
+      <DisplayGifs category={category} />
     </div>
   );
 }
