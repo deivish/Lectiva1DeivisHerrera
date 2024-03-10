@@ -2,6 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Instalación de npx
+se debe instalar en la consola pnx para que el node_modules pueda ser ejecutado ya que este fue ignorado en el git.ignore
+
+Antes de ejecutar este proyecto, asegúrate de tener Node.js y npm instalados en tu máquina. Puedes descargarlos e instalarlos desde https://nodejs.org/.
+
+Clona este repositorio en tu máquina local:
+git clone https://github.com/tu-usuario/tu-proyecto.git
+
+Cambia al directorio del proyecto:
+cd tu-proyecto
+
+Instala las dependencias del proyecto utilizando npx:
+npx install
+
+Esta instrucción utilizará npx para instalar las dependencias del proyecto sin necesidad de tener el directorio node_modules incluido en el repositorio.
+
+Ejecuta el proyecto:
+npx start
+
 ## Available Scripts
 
 In the project directory, you can run:
